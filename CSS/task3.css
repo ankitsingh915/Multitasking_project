@@ -9,6 +9,9 @@
 
 body{
     background-color: #edf2fc;
+    background-image: url(/Assets/design.png);
+    /* background-repeat: no-repeat; */
+    background-size: contain;
 }
 
 .wrapper{

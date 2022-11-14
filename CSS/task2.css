@@ -4,11 +4,12 @@ body{
     background-color: #edf2fc;
 }
 
-/* .planet2{
-    background-image: url(/Assets/design\ -\ Copy.png);
-    background-repeat: no-repeat;
+.planet2{
+    background-image: url(/Assets/design.png);
+    /* background-repeat: no-repeat; */
     background-size: contain;
-} */
+    /* padding-left: 60vw; */
+}
 
 .state{
     text-align: center; 
