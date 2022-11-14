@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./CSS/task2.css">
+</head>
+<body>
+    <div class="planet2">
+        <div class="header">
+            <h1 class="state">Calculator</h1>
+        </div>
+        <div class="calculator">   
+            <div class="cal">
+                <input type="text" class="screen " id="screen" placeholder="0">
+                <table>
+                    <tr>
+                        <td><button class="reset" onclick="clr()">C</button></td>
+                        <td><button class="operators" onclick="dis('/')">/</button></td>
+                        <td><button class="operators" onclick="dis('%')">%</button></td>
+                        <td><button class="operators" onclick="backspace()"><<</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num" onclick="dis('7')">7</button></td>
+                        <td><button class="num" onclick="dis('8')">8</button></td>
+                        <td><button class="num" onclick="dis('9')">9</button></td>
+                        <td><button class="operators" onclick="dis('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num" onclick="dis('4')">4</button></td>
+                        <td><button class="num" onclick="dis('5')">5</button></td>
+                        <td><button class="num" onclick="dis('6')">6</button></td>
+                        <td><button class="operators extra" onclick="dis('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num" onclick="dis('1')">1</button></td>
+                        <td><button class="num" onclick="dis('2')">2</button></td>
+                        <td><button class="num" onclick="dis('3')">3</button></td>
+                        <td><button class="operators extra" onclick="dis('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="num" onclick="dis('0')">0</button></td>
+                        <td><button class="num extra" onclick="dis('.')">.</button></td>
+                        <td><button class="equalsToBtn" onclick="solve()">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/task2.js"></script>
+</body>
+</html>

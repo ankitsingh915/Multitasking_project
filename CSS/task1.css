@@ -1,0 +1,90 @@
+/* Tic Tac Toe */
+
+    .planet1{
+    padding: 0;
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(/Assets/design.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+    body{
+        background-color: #edf2fc;
+    }
+    
+    .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    }
+    
+    .state2{
+        font-weight: 700;
+        font-size:4vw;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .header h1{
+    text-align: center;
+    }
+    
+    .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    
+    .row{
+        display: flex;
+        align-items: center;
+        justify-content: center;  
+    }
+    
+    .btn1{
+        border: 1px solid black;
+        border-radius: .5vw;
+        height: 7.5vw;
+        margin: .2vw;
+        width: 7.5vw;
+        text-align: center;
+        font-size: 5vw;
+        font-weight: 500;
+    }
+    
+    .btn1:hover{
+        cursor: pointer;
+        background-color:rgb(240,240,240);
+    }
+    
+    .btn1:disabled{
+        color: black;
+        cursor: no-drop;
+    }
+    
+    .res{
+        text-align: center;
+    }
+    
+    .reset{
+        text-align: center;
+    }
+    
+    #reset{
+        border: .1vw solid black;
+        cursor: pointer;
+        color: black;
+        background-color: white;
+        border-radius: .5vw;
+        padding: .5vw 2vw;
+        font-size: 1.7vw;
+        margin: 3.5vw;
+        transition: all 0.1s ease-in-out;
+    }
+    
+    #reset:hover{
+        color: white;
+        background-color: orangered;
+    }

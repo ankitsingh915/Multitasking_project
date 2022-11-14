@@ -1,0 +1,93 @@
+
+
+body{
+    background-color: #edf2fc;
+}
+
+/* .planet2{
+    background-image: url(/Assets/design\ -\ Copy.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
+
+.state{
+    text-align: center; 
+    font-weight: 700;
+    font-size:4vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: orangered;    
+    margin: 0vw;
+    padding-bottom: 2vw;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center; 
+}
+
+.cal{
+    padding: 3vw;
+    background: rgba(158, 147, 147, 0.2);
+    backdrop-filter: blur(1vw);
+    border-radius: 2vw;
+}
+
+.screen{
+    height: 6vw;
+    width: 20vw;
+    font-size: 2vw;
+    border: none;
+    margin-bottom: 2vw;
+    border-radius: 1vw;
+}
+
+.reset{
+    background-color:orangered;
+    color: white;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 3VW;
+    border: none;
+    font-size: 1.5vw;
+}
+
+.reset:hover, .operators:hover, .num:hover, .equalsToBtn:hover{
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+
+.operators{
+    height: 5vw;
+    width: 5vw;
+    border: none;
+    border-radius: 3VW;
+    color: orangered;
+    font-size: 1.5vw;
+}
+
+.num{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 3VW;
+    border: none;
+    background-color:darkgray;
+    font-size: 1.5vw;
+}
+
+.extra{
+    font-size: 2vw;
+}
+
+.extra:hover{
+    font-size: 2.2vw;
+}
+
+.equalsToBtn{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 3VW;
+    border: none;
+    font-size: 1.5vw;
+    color:white;
+    background-color: #ff9800;
+}

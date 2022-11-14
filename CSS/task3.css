@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Lobster&family=Poppins:wght@200;300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background-color: #edf2fc;
+}
+
+.wrapper{
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 18.5vw);
+    gap: 1.5vw;
+}
+
+.wrapper li{
+    background-color: #fff;
+    list-style: none;
+    height: 20vw;
+    border-radius: .5vw;
+    padding: 1.5vw 2vw 2vw;
+}
+
+.add-box, .icon, .bottom-content,
+.settings .menu li, .popup, header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-box{
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-box, .icon{
+    height: 5vw;
+    border-radius: 50%;
+    border: 2px dashed powderblue;
+    font-size: 2vw;
+    color: #88abff;
+    justify-content: center;
+}
+
+.icon{
+    width: 5vw;
+}
+
+.add-box p{
+    font-weight: 500;
+    margin-top: 2vw;
+    color: #88abff;
+}
+
+.wrapper .note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrapper .details{
+    max-height: 16.5vw;
+    overflow-y: auto;
+}
+
+.note p{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+.note span{
+    display: block;
+    font-size: 1.4vw;
+    color: #575757;
+    margin-top: .5vw;
+}
+
+.note .bottom-content{
+    padding-top: 1vw;
+    border-top: 1px solid #ccc;
+}
+
+.bottom-content span{
+    color: #6d6d6d;
+    font-size: 1.4vw;
+}
+
+.bottom-content .settings i{
+    cursor: pointer;
+    font-size: 1.5vw;
+    color:#6d6d6d ;
+}
+
+.settings{
+    position: relative;
+}
+
+.settings .menu{
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    position: absolute;
+    bottom: 0;
+    padding: 5px 0;
+    border-radius: 4px;
+    background-color: #fff;
+    right: -4px;
+    transform:scale(0) ;
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+}
+
+.settings.show .menu{
+    transform:scale(1) ;
+}
+
+.settings .menu li{
+    height: 2.5vw;
+    border-radius: 0;
+    cursor: pointer; 
+    justify-content: flex-start;
+    font-size: 1.6vw;
+    padding:1.7vw 1.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.menu li i{
+    padding-right: 8px;
+}
+
+.menu li:hover{
+    background-color: #f5f5f5;
+}
+
+.popup-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: rgba(0,0,0,0.4);
+}
+
+.popup-box .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    max-width: 40vw;
+    width: 100%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.popup-box, .popup-box .popup{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
+}
+
+.popup-box.show, .popup-box.show .popup{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup .content{
+    background: #fff;
+    border-radius: 5px;
+    width: calc(100% - 15px);
+}
+
+.popup .content header{
+    padding: 15px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content header p{
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.content header i{
+    color: #8b8989;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.content form{
+    margin: 15px 25px 35px;
+}
+
+.content form .row{
+    margin-bottom: 20px;
+}
+
+form .row label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.content form :where(input, textarea){
+    width: 100%;
+    height: 5vw;
+    outline: none;
+    font-size: 17px;
+    border-radius: 4px;
+    padding: 0 15px ;
+    border: 1px solid #999;
+}
+
+.content form textarea{
+    height: 15vw;
+    resize: none;
+    padding: 8px 15px;
+}
+
+.content form button{
+    width: 100%;
+    height:50px ;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #6a93f8;
+}
