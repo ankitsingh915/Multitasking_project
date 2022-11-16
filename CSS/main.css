@@ -27,7 +27,7 @@ body{
 
 .bac{
     background: var(--primary-color);
-    background-image: url(/Assets/sphere-stone-g58790901a_640.png);
+    background-image: url(../Assets/sphere-stone-g58790901a_640.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
