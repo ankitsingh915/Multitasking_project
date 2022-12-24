@@ -19,11 +19,18 @@
             <h1 class="hclr">Welcome to <span class="clr">Taskmaster</span></h1>
             <h4 class="mar">We have multiple tasks to perform <br><span class="mar1"><span class="mar2"> login </span> to explore </span></h4>
             
-            <input type="text" id="tim1" placeholder="Your name please"> <br><br>
+            <input type="text" id="tim1" onkeyup="show1()" onclick="err()" placeholder="Your name please"> 
+            <span id="err"></span><br><br>
             <a href="./tasksPage.html">
-                <button class="bt" onclick="show()">Log in</button>
+                <button class="bt" id="bt" onclick="show()" disabled>Log in</button>
             </a>
         </div>
+    </div>
+    <div class="para2">
+        <a class="nap" href="https://www.facebook.com/ankitsingh915"><img class="i1" src="./Assets/facebook.svg"></a>
+        <a class="nap" href="https://www.instagram.com/ankitsingh915/"><img class="i1" src="./Assets//instagram.svg"></a>
+        <a class="nap" href="https://www.linkedin.com/in/ankit-singh-a5671b246/"><img class="i1" src="./Assets//linkedin.svg"></a>
+        <a class="nap" href="https://twitter.com/ankitsingh915"><img class="i1" src="./Assets//twitter.svg"></a>
     </div>
 
 

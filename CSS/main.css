@@ -80,6 +80,25 @@ body{
     margin-left:8vw ;
 }
 
+#err{
+    font-size: 1.3vw;
+    color: red
+}
+
+.para2{
+    float: right;
+    margin-right: 10vw;
+    margin-top:8vw;
+}
+
+.nap{
+    padding-left: 2vw;
+}
+
+.i1{
+    width: 1.3vw;
+}
+
 
 
 
@@ -88,22 +107,42 @@ body{
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 .universe{
-    background-image: url(/Assets/content.png);
+    background-image: url(/Assets/bac1.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
+}
+
+.anc{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+li{
+    list-style-type: none;
+    padding: 2vw;
+    font-size: 1.3vw;
+}
+
+.list{
+    display: flex;
+    float: right;
+    margin-right: 10vw;
+    /* justify-content:space-around; */
 }
 
 .state{
     text-align: center;
-    color: orangered;
+    color:white;
+    /* background-color: burlywood; */
     padding-top: 2vw;
     font-weight: 700;
     font-size:4vw;
     /* font-family: 'Times New Roman', Times, serif; */
-    font-family: 'Acme', sans-serif;
-}
+    /* font-family: 'Acme', sans-serif; */
+    font-family: 'Lora', serif;}
 
 .flx1{
     display: flex;
@@ -119,6 +158,13 @@ body{
 
 .pad{
     padding: 3vw;
+}
+
+.pad:hover{
+    background-color:cadetblue;
+    opacity: 1;
+    /* border: 1px solid white; */
+    box-shadow: 15px 15px rgb(2, 123, 128);
 }
 
 .pad2{
@@ -142,33 +188,41 @@ body{
     height: 45vw;
 }
 
-#greet{
-    /* font-weight: 700; */
-    font-size:4vw;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    padding-top: 10vw;
+.edit{
     color: orangered;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#greet{
+    font-size:4vw;
+    font-family: 'Lora', serif;
+    padding-left: 5vw;
+    padding-top: 10vw;
+    color:rgb(16, 123, 185);
 }
 
 #greet2{
-    /* font-weight: 700; */
     font-size:4vw;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
+    font-family: 'Lora', serif;
+    padding-left: 15vw;
     padding-top: 4vw;
 }
 
 .arrow{
-    text-align: center;
-    justify-content: center;
+    padding-left: 20vw;
     padding-top: 4vw;
 }
 
 .img1{   
     height: 8vw;
+    transform: rotate(180deg);
+
+}
+
+.img1:hover{
+    /* background-color: white; */
+    transform: rotate(0deg);
 }
     
     
